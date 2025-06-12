@@ -61,18 +61,23 @@
 }
 
 .img_icon,
-.akar_heart img ,
+.akar_heart img,
 .akar_cart img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 25px;
   object-fit: contain;
 }
 
-.modal_heart .modal_cart {
+.modal_heart,
+.modal_cart {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
+}
+
+.modal_heart .akar_heart:hover {
+  color: red;
 }
 
 .introduction {
@@ -132,7 +137,7 @@
   background-color: #a3761f;
 }
 
-.categori_container {
+.categori {
   text-align: center;
   padding: 14px 32px;
   font-family: "Segoe UI", sans-serif;
@@ -140,61 +145,51 @@
   margin-top: 20px;
 }
 
-.title {
+.categori-title .title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.sub_title {
+.categori-title .sub_title {
   font-size: 16px;
   color: #666;
   margin-bottom: 48px;
 }
 
-.dining_container {
+.categori-content {
   display: flex;
   justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
 }
 
-.categori_dining,
-.categori_living,
-.categori_bedroom {
+.categori-item {
   border-radius: 12px;
   overflow: hidden;
   width: 300px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.categori_dining:hover,
-.categori_living:hover,
-.categori_bedroom:hover {
+.categori-item:hover {
   transform: scale(1.03);
 }
 
-.living_img ,
-.bedroom_img ,
-.dining_img {
+.categori-item img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 10px;
 }
 
-
-
-.categori_dining h3,
-.categori_living h3,
-.categori_bedroom h3 {
+.categori-item h3 {
   font-size: 18px;
   font-weight: 700;
   margin-top: 20px;
   color: #333;
 }
-
 
 .title_product {
   padding: 30px 20px;
@@ -297,6 +292,7 @@
   display: flex;
   background: #fdf8f2;
   padding: 60px;
+  margin-top: 50px;
   justify-content: space-between;
   align-items: center;
 }
@@ -307,22 +303,26 @@
 }
 
 .room-inspiration__title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   color: #2d2d2d;
+  font-family: sans-serif;
 }
 
 .room-inspiration__desc {
-  margin: 20px 0;
+  margin: 0;
   font-size: 16px;
-  color: #5e5e5e;
+  font-weight: 500;
+  color: rgb(97 97 97);
 }
 
 .room-inspiration__button {
   background: #c09747;
   color: #fff;
-  padding: 12px 24px;
+  padding: 12px 25px;
+  margin-top: 25px;
   border: none;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -336,7 +336,9 @@
 
 .carousel__arrow {
   background: #fff;
+  color: #f9a825;
   border: 1px solid #ddd;
+  width: 40px;
   border-radius: 50%;
   padding: 10px;
   font-size: 18px;
@@ -359,15 +361,15 @@
 }
 
 .carousel__image img {
-  width: 400px;
-  border-radius: 8px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .carousel__caption {
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  background: rgba(255,255,255,0.9);
+  left: 30px;
+  background: rgba(255, 255, 255, 0.9);
   padding: 10px 20px;
   border-radius: 6px;
 }
@@ -377,13 +379,14 @@
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
+  gap: 10px;
 }
 
 .caption__arrow {
   background: #c09747;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 7px 12px;
   cursor: pointer;
 }
 
@@ -392,24 +395,50 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
 }
 
-.dot {
+.dot-wrapper {
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-wrapper .dot {
   height: 10px;
   width: 10px;
-  margin: 0 4px;
   background-color: #ccc;
   border-radius: 50%;
   display: inline-block;
+  transition: background-color 0.3s;
 }
 
-.dot.active {
+.dot-wrapper .dot.active {
   background-color: #c09747;
+}
+
+.dot-wrapper.active {
+  border: 2px solid #c09747;
+}
+
+.dot-wrapper:has(.dot.active) {
+  border: 2px solid #c09747;
+}
+
+.hidden {
+  display: none;
 }
 
 .hashtag_section {
   text-align: center;
   padding: 60px 20px;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .hashtag_text {
@@ -480,15 +509,18 @@
 }
 
 .footer_links li {
-  gap: 10px;
   margin-bottom: 20px;
-  list-style: none;;
+  list-style: none;
 }
 
 .footer_links a {
   text-decoration: none;
   color: #000;
   font-weight: 600;
+}
+
+.footer_links li a:hover {
+  color: #b88e2f;
 }
 
 .footer_newsletter {
@@ -501,7 +533,7 @@
 
 .footer_newsletter input {
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #787878;
   padding: 8px;
   width: 180px;
   outline: none;

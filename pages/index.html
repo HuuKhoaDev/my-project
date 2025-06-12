@@ -7,254 +7,260 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <nav class="navbar_home">
-      <div class="navbar_left">
-        <a href="#" class="logo">
-          <img class="img_logo" src="/images/Logo_left.png" alt="Logo" />
-        </a>
-        <h2 class="name_logo">Furniro</h2>
-      </div>
-      <div class="middle">
-        <ul>
-          <li class="list_content"><a class="link_menu" href="">Home</a></li>
-          <li class="list_content"><a class="link_menu" href="">Shop</a></li>
-          <li class="list_content"><a class="link_menu" href="">About</a></li>
-          <li class="list_content"><a class="link_menu" href="">Contact</a></li>
-        </ul>
-      </div>
+    <header class="header">
+      <nav class="navbar_home">
+        <div class="navbar_left">
+          <a href="#" class="logo">
+            <img class="img_logo" src="/images/Logo_left.png" alt="Logo" />
+          </a>
+          <h2 class="name_logo">Furniro</h2>
+        </div>
 
-      <div class="navbar_right">
-        <div class="navbar_icon">
-          <ul class="action">
-            <li class="magnifying">
-              <a href="/">
-                <img
-                  class="img_icon"
-                  src="/images/search_icon.png"
-                  alt="furniro"
-                />
-              </a>
+        <div class="middle">
+          <ul>
+            <li class="list_content"><a class="link_menu" href="">Home</a></li>
+            <li class="list_content"><a class="link_menu" href="">Shop</a></li>
+            <li class="list_content"><a class="link_menu" href="">About</a></li>
+            <li class="list_content">
+              <a class="link_menu" href="">Contact</a>
             </li>
-
-            <div class="heart_icon">
-              <button class="modal_heart">
-                <div class="modal_icon">
-                  <span class="akar_heart">
-                    <img src="/images/heart_icon.png" alt="" />
-                  </span>
-                </div>
-              </button>
-            </div>
-
-            <div class="cart_icon">
-              <button class="modal_cart">
-                <div class="modal_icon">
-                  <span class="akar_cart">
-                    <img src="/images/cart_icon.png" alt="" />
-                  </span>
-                </div>
-              </button>
-            </div>
           </ul>
         </div>
-      </div>
-    </nav>
 
-    <div class="home_page">
-      <div class="introduction">
-        <div class="introduce">
-          <div class="content">
-            <span class="content_title">New Arrival</span>
-            <h1 class="main_heading">Discover Our New Collection</h1>
-            <p class="paragrapg_title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis.
-            </p>
-            <a href="">BUY NOW</a>
+        <div class="navbar_right">
+          <div class="navbar_icon">
+            <ul class="action">
+              <li class="magnifying">
+                <a href="/">
+                  <img
+                    class="img_icon"
+                    src="/images/search_icon.png"
+                    alt="search"
+                  />
+                </a>
+              </li>
+              <li class="heart_icon">
+                <button class="modal_heart">
+                  <div class="modal_icon">
+                    <span class="akar_heart">
+                      <img src="/images/heart_icon.png" alt="heart" />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li class="cart_icon">
+                <button class="modal_cart">
+                  <div class="modal_icon">
+                    <span class="akar_cart">
+                      <img src="/images/cart_icon.png" alt="cart" />
+                    </span>
+                  </div>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="categori_container">
-        <h3 class="title">Browse The Range</h3>
-        <p class="sub_title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="dining_container">
-          <div class="categori_dining">
-            <img class="dining_img" src="/images/cart_img.png" alt="dining" />
-            <h3>Dining</h3>
+    <div class="container">
+      <div class="home_page">
+        <div class="introduction">
+          <div class="introduce">
+            <div class="content">
+              <span class="content_title">New Arrival</span>
+              <h1 class="main_heading">Discover Our New Collection</h1>
+              <p class="paragrapg_title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis.
+              </p>
+              <a href="">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="categori">
+          <div class="categori-title">
+            <h3 class="title">Browse The Range</h3>
+            <p class="sub_title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
 
-          <div class="living_container">
-            <div class="categori_living">
+          <div class="categori-content">
+            <div class="categori-item">
+              <img class="dining_img" src="/images/cart_img.png" alt="dining" />
+              <h3>Dining</h3>
+            </div>
+
+            <div class="categori-item">
               <img class="living_img" src="/images/living_img.png" alt="" />
               <h3>Living</h3>
             </div>
-          </div>
 
-          <div class="product_card bedroom_container">
-            <div class="categori_bedroom">
+            <div class="categori-item">
               <img class="bedroom_img" src="/images/bedroom_img.png" alt="" />
               <h3>Bedroom</h3>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="our_tile">
-      <h2 class="title_product">Our Products</h2>
-      <div class="product_grid">
-        <div class="product_card syltherine">
-          <img src="/images/Syltherine_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Syltherine</h5>
-            <p class="name_title">Stylish cafe chair</p>
-            <div class="product_price">
-              <span class="price">Rp 2.500.000</span>
-              <span class="price_change">Rp 3.500.000</span>
+        <div class="our_tile">
+          <h2 class="title_product">Our Products</h2>
+          <div class="product_grid">
+            <div class="product_card syltherine">
+              <img src="/images/Syltherine_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Syltherine</h5>
+                <p class="name_title">Stylish cafe chair</p>
+                <div class="product_price">
+                  <span class="price">Rp 2.500.000</span>
+                  <span class="price_change">Rp 3.500.000</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="product_card leviosa">
-          <img src="/images/Leviosa_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Leviosa</h5>
-            <p class="name_title">Stylish cafe chair</p>
-            <div class="product_price">
-              <span class="price">Rp 2.500.000</span>
+            <div class="product_card leviosa">
+              <img src="/images/Leviosa_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Leviosa</h5>
+                <p class="name_title">Stylish cafe chair</p>
+                <div class="product_price">
+                  <span class="price">Rp 2.500.000</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="product_card lolito">
-          <img src="/images/Lolito_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Lolito</h5>
-            <p class="name_title">Luxyry big sofa</p>
-            <div class="product_price">
-              <span class="price">Rp 7.000.000</span>
-              <span class="price_change">Rp 14.000.000</span>
+            <div class="product_card lolito">
+              <img src="/images/Lolito_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Lolito</h5>
+                <p class="name_title">Luxyry big sofa</p>
+                <div class="product_price">
+                  <span class="price">Rp 7.000.000</span>
+                  <span class="price_change">Rp 14.000.000</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="product_card respira">
-          <img src="/images/Respira_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Respira</h5>
-            <p class="name_title">Outdoor bar table and stool</p>
-            <div class="product_price">
-              <span class="price">Rp 500.000</span>
+            <div class="product_card respira">
+              <img src="/images/Respira_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Respira</h5>
+                <p class="name_title">Outdoor bar table and stool</p>
+                <div class="product_price">
+                  <span class="price">Rp 500.000</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="product_card grifo">
-          <img src="/images/Grifo_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Grifo</h5>
-            <p class="name_title">Night lamp</p>
-            <div class="product_price">
-              <span class="price">Rp 1.500.000</span>
+            <div class="product_card grifo">
+              <img src="/images/Grifo_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Grifo</h5>
+                <p class="name_title">Night lamp</p>
+                <div class="product_price">
+                  <span class="price">Rp 1.500.000</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="product_card mmuggo">
-          <img src="/images/Muggo_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Muggo</h5>
-            <p class="name_title">Small mug</p>
-            <div class="product_price">
-              <span class="price">Rp 150.000</span>
+            <div class="product_card mmuggo">
+              <img src="/images/Muggo_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Muggo</h5>
+                <p class="name_title">Small mug</p>
+                <div class="product_price">
+                  <span class="price">Rp 150.000</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="product_card pingky">
-          <img src="/images/Pingky_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Pingky</h5>
-            <p class="name_title">Cute bed set</p>
-            <div class="product_price">
-              <span class="price">Rp 7.000.000</span>
-              <span class="price_change">Rp 14.000.000</span>
+            <div class="product_card pingky">
+              <img src="/images/Pingky_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Pingky</h5>
+                <p class="name_title">Cute bed set</p>
+                <div class="product_price">
+                  <span class="price">Rp 7.000.000</span>
+                  <span class="price_change">Rp 14.000.000</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="product_card potty">
-          <img src="/images/Potty_img.png" alt="" />
-          <div class="product_content">
-            <h5 class="name_product">Potty</h5>
-            <p class="name_title">Minimalist flower pot</p>
-            <div class="product_price">
-              <span class="price">Rp 500.000</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn_more">
-        <button class="show_more">Show More</button>
-      </div>
-
-      <div class="room-inspiration">
-        <div class="room-inspiration__content">
-          <h3 class="room-inspiration__title">
-            50+ Beautiful rooms inspiration
-          </h3>
-          <p class="room-inspiration__desc">
-            Our designer already made a lot of beautiful prototipe of rooms that
-            inspire you
-          </p>
-          <button class="room-inspiration__button">Explore More</button>
-        </div>
-
-        <div class="room-inspiration__carousel">
-          <button class="carousel__arrow left">&#10094;</button>
-          <div class="carousel__image">
-            <img src="/images/Rectangle_img.png" alt="Room 1" />
-            <div class="carousel__caption">
-              <small>1 - Bed Room</small>
-              <div class="caption__title">
-                <strong>Inner Peace</strong>
-                <button class="caption__arrow">→</button>
+            <div class="product_card potty">
+              <img src="/images/Potty_img.png" alt="" />
+              <div class="product_content">
+                <h5 class="name_product">Potty</h5>
+                <p class="name_title">Minimalist flower pot</p>
+                <div class="product_price">
+                  <span class="price">Rp 500.000</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel__image hidden">
-            <img src="/images/Rectangle 25.png " alt="Room 2" />
-          </div>
-          <button class="carousel__arrow right">&#10095;</button>
-          <div class="carousel__dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+          <div class="btn_more">
+            <button class="show_more">Show More</button>
           </div>
         </div>
-      </div>
 
-      <div class="hashtag_section">
-        <p class="hashtag_text">Share your setup with</p>
-        <h2 class="hashtag_title">#FuniroFurniture</h2>
-        <div class="hashtag-gallery">
-          <img src="/images/Rectangle 36.png" alt="Image 1" />
-          <img src="/images/Rectangle 38.png" alt="Image 2" />
-          <img src="/images/Rectangle 40.png" alt="Image 3" />
-          <img src="/images/Rectangle 43.png" alt="Image 4" />
-          <img src="/images/Rectangle 45.png" alt="Image 5" />
-          <img src="/images/Rectangle 37.png" alt="Image 6" />
-          <img src="/images/Rectangle 39.png" alt="Image 7" />
-          <img src="/images/Rectangle 41.png" alt="Image 8" />
-          <img src="/images/Rectangle 44.png" alt="Image 9" />
+        <div class="room-inspiration">
+          <div class="room-inspiration__content">
+            <h3 class="room-inspiration__title">
+              50+ Beautiful rooms inspiration
+            </h3>
+            <p class="room-inspiration__desc">
+              Our designer already made a lot of beautiful prototipe of rooms<br>
+              that inspire you
+            </p>
+            <button class="room-inspiration__button">Explore More</button>
+          </div>
+
+          <div class="room-inspiration__carousel">
+            <button class="carousel__arrow left">&#10094;</button>
+            <div class="carousel__image">
+              <img src="/images/Rectangle_img.png" alt="Room 1" />
+
+              <div class="carousel__caption">
+                <small>1 - Bed Room</small>
+                <div class="caption__title">
+                  <strong>Inner Peace</strong>
+                  <button class="caption__arrow right">&#8594;</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__image hidden">
+              <img src="/images/Rectangle 25.png" alt="Room 2" />
+            </div>
+            <button class="carousel__arrow right">&#10095;</button>
+            <div class="carousel__dots">
+              <span class="dot-wrapper"><span class="dot active"></span></span>
+              <span class="dot-wrapper"><span class="dot"></span></span>
+              <span class="dot-wrapper"><span class="dot"></span></span>
+              <span class="dot-wrapper"><span class="dot"></span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hashtag_section">
+          <p class="hashtag_text">Share your setup with</p>
+          <h2 class="hashtag_title">#FuniroFurniture</h2>
+          <div class="hashtag-gallery">
+            <img src="/images/Rectangle 36.png" alt="Image 1" />
+            <img src="/images/Rectangle 38.png" alt="Image 2" />
+            <img src="/images/Rectangle 40.png" alt="Image 3" />
+            <img src="/images/Rectangle 43.png" alt="Image 4" />
+            <img src="/images/Rectangle 45.png" alt="Image 5" />
+            <img src="/images/Rectangle 37.png" alt="Image 6" />
+            <img src="/images/Rectangle 39.png" alt="Image 7" />
+            <img src="/images/Rectangle 41.png" alt="Image 8" />
+            <img src="/images/Rectangle 44.png" alt="Image 9" />
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer_container">
         <div class="footer_column">
           <h3 class="footer_logo">Funiro.</h3>
@@ -292,11 +298,13 @@
         </div>
       </div>
 
-      <hr class="footer_divider">
+      <hr class="footer_divider" />
 
       <div class="footer_bottom">
         <p>2023 funiro. All rights reserved</p>
       </div>
-    </div>
+    </footer>
+
+   
   </body>
 </html>
