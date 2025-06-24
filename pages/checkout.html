@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/shop/shop.css" />
+    <link rel="stylesheet" href="/css/about/about.css" />
+    <link rel="stylesheet" href="/pages/contact.html" />
+    <link rel="stylesheet" href="/css/sreach/sreach.css" />
+    <link rel="stylesheet" href="/css/heart/heart.css">
+    <link rel="stylesheet" href="/css/register/register.css">
+    <link rel="stylesheet" href="/css/checkout/checkout.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar_home">
+      <div class="navbar_left">
+        <a href="./index.html" class="logo">
+          <img class="img_logo" src="/images/Logo_left.png" alt="Logo" />
+        </a>
+        <h2 class="name_logo">Furniro</h2>
+      </div>
+      <div class="navbar">
+        <button class="navbar_toggle">
+          <img src="/images/bullet-menu-icon-free-vector.jpg" alt="Menu" />
+        </button>
+      </div>
+
+      <div class="navbar_dropdown">
+        <div class="middle">
+          <ul>
+            <li class="list_content">
+              <a class="link_menu" href="./index.html">Home</a>
+            </li>
+            <li class="list_content">
+              <a class="link_menu" href="./shop.html">Shop</a>
+            </li>
+            <li class="list_content">
+              <a class="link_menu" href="./about.html">About</a>
+            </li>
+            <li class="list_content">
+              <a class="link_menu" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar_right">
+          <div class="navbar_icon">
+            <ul class="action">
+              <li class="vector">
+                <button class="modal_vector">
+                  <div class="modal_icon">
+                    <span class="akar_vector">
+                     <a href="./register.html">
+                      <img src="/images/icon_right.png" alt="vector">
+                     </a>
+                    </span>
+                  </div>
+                </button>
+              </li>
+              </li>
+              <li class="magnifying">
+                <a href="./sreach.html">
+                  <img
+                    class="img_icon"
+                    src="/images/search_icon.png"
+                    alt="search"
+                  />
+                </a>
+              </li>
+              <li class="heart_icon">
+                <button class="modal_heart">
+                  <div class="modal_icon">
+                    <span class="akar_heart">
+                      <a href="./heart.html">
+                        <img src="/images/heart_icon.png" alt="heart" />
+                      </a>
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li class="cart_icon">
+                <button class="modal_cart">
+                  <div class="modal_icon">
+                    <span class="akar_cart">
+                      <img src="/images/cart_icon.png" alt="cart" />
+                      <span id="cart-count" class="cart-count">0</span>
+                    </span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="cart-sidebar" class="cart-sidebar hidden">
+        <div class="cart">
+          <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button id="close-cart" class="close-cart">×</button>
+          </div>
+          <div class="cart-body">
+            <p>There is no products in cart</p>
+          </div>
+          <div class="cart-footer">
+            <div class="subtotal">
+              <span>Subtotal</span>
+              <span>Rs. 0</span>
+            </div>
+            <div class="cart-buttons">
+              <button class="btn"><a href="cart.html">Cart</a></button>
+              <button class="btn"><a href="./checkout.html">Checkout</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="checkout-container">
+        <form class="checkout-form">
+          <div class="checkout-form__right">
+            <h3 class="checkout-form__title">Billing details</h3>
+      
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required />
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="companyname">Company Name (Optional)</label>
+              <input type="text" id="companyname" name="companyname" />
+            </div>
+      
+            <div class="form-group">
+              <label for="region">Country / Region</label>
+              <select name="region" id="region">
+                <option value="1" selected>Lanka</option>
+                <option value="2">Ikinci Olke</option>
+                <option value="3">Ucuncu Olke</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="city">Town / City</label>
+              <input type="text" id="city" name="city" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="province">Province</label>
+              <select name="province" id="province">
+                <option value="1" selected>Western Province</option>
+                <option value="2">Ikinci Province</option>
+                <option value="3">Ucuncu Province</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="zipcode">Zip Code</label>
+              <input type="text" id="zipcode" name="zipcode" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+      
+            <div id="form-group">
+              <input type="text" id="additional" name="additional" placeholder="Additional information" />
+            </div>
+          </div>
+      
+          <div class="checkout-form__left">
+            <div class="checkout-content">
+              <div class="order-summary">
+                <div class="order-summary__header">
+                  <p>Product</p>
+                  <p>Subtotal</p>
+                  </div>
+
+                  <div class="order-summary__items"></div>
+          
+                  <div class="order-summary__title">
+                    <div class="order-summary__subtotal">
+                      <p>Subtotal</p>
+                      <p>Rs. 0</p>
+                    </div>
+  
+                    <div class="order-summary__subtotal">
+                      <p>Total</p>
+                      <p  class="price">Rs. 0</p>
+                    </div>
+                  </div>
+                </div>
+  
+  
+        
+                <div class="payment-methods">
+                  <div class="payment-method">
+                    <label for="bank">
+                      <input type="radio" id="bank" name="payment" />
+                      Direct Bank Transfer
+                    </label>
+                    <p class="payment-description hidden">
+                      Make your payment directly into our bank account. Please use your Order ID as the payment reference. 
+                      Your order will not be shipped until the funds have cleared in our account.
+                    </p>
+                  </div>
+        
+                  <div class="payment-method">
+                    <label for="cash">
+                      <input type="radio" id="cash" name="payment" />
+                      Cash On Delivery
+                    </label>
+                    <p class="payment-description hidden">
+                      Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                      Your order will not be shipped until the funds have cleared in our account.
+                    </p>
+                  </div>
+                </div>
+        
+                <div class="privacy-note">
+                  <p>
+                    Your personal data will be used to support your experience throughout this website,
+                    to manage access to your account, and for other purposes described in our
+                    <strong>privacy policy</strong>.
+                  </p>
+                </div>
+        
+                <div class="place-order">
+                  <button class="place-order__button">Place order</button>
+                </div>
+              </div>
+          </div>
+          
+        </form>
+    </div>
+
+    <div class="features">
+      <div class="feature-wrap">
+        <div class="feature-item">
+          <img src="/images/Cup.png" alt="High Quality" />
+          <div class="text">
+            <h3>High Quality</h3>
+            <p>crafted from top materials</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="/images/Tick.png" alt="Warranty Protection" />
+          <div class="text">
+            <h3>Warranty Protection</h3>
+            <p>Over 2 years</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="/images/Hand.png" alt="Free Shipping" />
+          <div class="text">
+            <h3>Free Shipping</h3>
+            <p>Order over 150 $</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="/images/People.png" alt="24 / 7 Support" />
+          <div class="text">
+            <h3>24 / 7 Support</h3>
+            <p>Dedicated support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer-content">
+                <div class="footer_column">
+                    <h3 class="footer_logo">Funiro.</h3>
+                    <p class="footer_address">
+                        400 University Drive Suite 200 Coral Gables,<br />
+                        FL 33134 USA
+                    </p>
+                </div>
+
+                <div class="footer_column">
+                    <ul class="footer_links">
+                        <h4 class="footer_title">Link</h4>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column">
+                    <ul class="footer_links">
+                        <h4 class="footer_title">Help</h4>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column">
+                    <h4 class="footer_title">Newsletter</h4>
+                    <form class="footer_newsletter">
+                        <input type="email" placeholder="Enter Your Email Address" />
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer_divider" />
+
+        <div class="footer_bottom">
+            <p>2023 funiro. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/cart.js"></script>
+
+
+</body>
+
+</html>

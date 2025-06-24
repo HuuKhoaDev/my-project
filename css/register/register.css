@@ -1,0 +1,133 @@
+.container-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-color: #fff3e3;
+  border-bottom: 1px solid #9f9f9f47;
+}
+
+.register {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.background {
+  width: 50%;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.signup {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+}
+
+.registration label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.registration input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+}
+
+.register-information {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.signup-btn {
+  background-color: #b58e2d;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #a67c00;
+}
+
+.register-content {
+  border: 1px solid #eee;
+  padding: 40px 32px 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.redirect-link {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+}
+
+.redirect-link a {
+  color: #b58e2d;
+  font-weight: 500;
+}
+
+/* .redirect-link a:hover {
+  text-decoration: underline;
+} */
+
+@media (max-width: 768px) {
+  .background {
+    display: none;
+  }
+
+  .signup {
+    max-width: unset;
+    padding: 32px;
+  }
+
+  .register-content {
+    padding: 16px;
+  }
+}
