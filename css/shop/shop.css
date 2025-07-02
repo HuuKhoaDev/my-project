@@ -1,0 +1,395 @@
+.shop-header-section {
+  background-color: #fdf3e8;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: #000;
+  width: 100%;
+}
+
+.banner-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(2px) brightness(0.9);
+}
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: 500;
+  color: #000;
+  z-index: 2;
+}
+
+.banner-breadcrumbs {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.breadcrumb-link {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.breadcrumb-separator {
+  width: 16px;
+  height: auto;
+}
+
+.breadcrumb-current {
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  width: 100%;
+}
+
+.toolbar-center {
+  max-width: 1236px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.shop-toolbar {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  font-size: 16px;
+}
+
+.shop-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.toolbar-view-toggle {
+  display: flex;
+  gap: 20px;
+  padding: 0 32px 0 0;
+}
+
+.toolbar-filter-btn {
+  background: none;
+  border: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.icon-filter::before {
+  content: "\f0b0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.toolbar-view-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 4px;
+  color: #000;
+}
+
+.view-grid.active,
+.view-list.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.toolbar-result-count {
+  font-weight: 500;
+}
+
+.shop-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.toolbar-show,
+.toolbar-sort {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toolbar-show,
+.toolbar-sort span {
+  /* margin: 0 16px 0 0; */
+  font-size: 20px;
+}
+
+.input-show-count {
+  /* width: 100%; */
+  padding: 4px;
+  margin: 0 24px 0 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.sort-select {
+  padding: 6px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.product-list {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1300px;
+  padding: 64px 32px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.product-list > div {
+  background: #f9f9f9;
+  position: relative;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-list img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-category {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-category:hover .overlay {
+  opacity: 1;
+}
+
+.article-content {
+  padding: 16px 20px 30px 16px;
+  text-align: left;
+  background-color: #eeeeee;
+}
+
+.article-content h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.article-content p {
+  font-size: 16px;
+  color: #888;
+  margin: 4px 0;
+}
+
+.price {
+  margin-top: 8px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-btn {
+  display: flex;
+  gap: 28px;
+}
+
+.pagination button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f9efe5;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #b88e2f;
+  color: #fff;
+}
+
+.pagination button.active {
+  background-color: #b88e2f;
+  color: #fff;
+}
+
+.distance {
+  padding: 50px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f1e7;
+  width: 100%;
+}
+
+.feature-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 105px 53px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.feature-item h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.feature-item p {
+  margin: 4px 0 0 0;
+  font-size: 17px;
+  color: #7c7c7c;
+}
+
+@media (max-width: 768px) {
+  .shop-page-container {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .toolbar-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .toolbar {
+    padding: 32px;
+  }
+
+  .shop-toolbar {
+    padding: 0;
+    margin: 0 0 24px 0;
+  }
+
+  .shop-toolbar-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shop-toolbar-right {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .toolbar-show,
+  .toolbar-sort span {
+    margin: 0;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .feature-wrap {
+    gap: 30px;
+  }
+
+  .feature-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .sort-select {
+    padding: 10px;
+  }
+}

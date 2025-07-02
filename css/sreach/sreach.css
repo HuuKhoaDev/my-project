@@ -1,0 +1,30 @@
+.search-wrapper {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 440px;
+  width: 100%;
+}
+
+.search-wrapper img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.search-wrapper input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 200px;
+}
+
+.distance-sreach {
+  margin-bottom: 248px;
+  border-bottom: 1px solid #9f9f9f4d;
+}

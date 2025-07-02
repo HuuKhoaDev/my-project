@@ -1,0 +1,17 @@
+.content-heart {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  border-bottom: 1px solid #9f9f9f4d;
+  width: 100%;
+}
+
+.content-heart p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0.7;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
